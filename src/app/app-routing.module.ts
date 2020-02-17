@@ -5,7 +5,6 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
-import { BoardUserComponent } from './board-user/board-user.component';
 import { MyImagesComponent } from './my-images/my-images.component';
 import { NewImageComponent } from './new-image/new-image.component';
 
@@ -14,7 +13,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'user', component: BoardUserComponent },
   { path: 'my-images', component: MyImagesComponent },
   { path: 'add-image', component: NewImageComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }

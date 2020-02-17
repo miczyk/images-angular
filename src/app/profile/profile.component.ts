@@ -35,6 +35,8 @@ export class ProfileComponent implements OnInit {
       this.msg = "Value of old email and new email are the same!";
       return;
     }
+    console.log(value);
+    console.log(this.currentUser.email);
       this.srvChangeEmail.changeEmail(this.currentUser.email, value).subscribe(
       data => {
         this.error = false;

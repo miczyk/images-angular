@@ -11,7 +11,7 @@ export class ChangeEmailService {
 
 
   public changeEmail(oldEmail:string, newEmail:string) : Observable<any> {
-    const params = new HttpParams().set('newEmail', newEmail);
-    return this.http.put("http://localhost:8080/email/" + oldEmail + "?newEmail="+newEmail, {},{ params });
+    // const params = new HttpParams().set('newEmail', newEmail);
+    return this.http.put("http://localhost:8080/email/" + oldEmail + "?newEmail="+newEmail, {},{});
   }
 }

@@ -2,7 +2,7 @@
     <h3>Add new image .jpg</h3>
 </div>
 <div class="row">
-    <input type="file" value="Choose file" (change)="onFileSelected($event)">
+    <input type="file" accept="image/gif, image/jpeg, image/png" value="Choose file" (change)="onFileSelected($event)">
     <button type="button" (click)="onUpload()">Send</button>
 </div>
 <div class="row" *ngIf="msg">
