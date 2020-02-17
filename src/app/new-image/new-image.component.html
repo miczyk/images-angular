@@ -1,0 +1,16 @@
+<div class="row">
+    <h3>Add new image .jpg</h3>
+</div>
+<div class="row">
+    <input type="file" value="Choose file" (change)="onFileSelected($event)">
+    <button type="button" (click)="onUpload()">Send</button>
+</div>
+<div class="row" *ngIf="msg">
+    <div class="alert alert-success" *ngIf="addedImage">
+        {{msg}}
+      </div>
+      <div class="alert alert-danger" *ngIf="!addedImage">
+        {{msg}}
+      </div>
+</div>
+
